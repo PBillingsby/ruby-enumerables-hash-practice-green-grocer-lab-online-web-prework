@@ -12,10 +12,10 @@ end
 
 def apply_coupons(cart, coupons)
   # code here
-  coupon = coupons.find { |coupon| coupon[:item] }
+  coupon = coupons.find { |coupon| coupon[:item] } # finding coupon in 
   cart.each |n| 
     if n.include?(coupon)
-      puts "#{n} W/COUPON"
+      puts "#{item} W/COUPON"
     end
   
 end
