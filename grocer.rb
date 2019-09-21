@@ -13,7 +13,7 @@ end
 def apply_coupons(cart, coupons)
   # code here
   coupon = coupons.find { |coupon| coupon[:item]
-  cart.each |n| { n[coupon]
+  cart.each |n| { n.include?(coupon) }
   
   
   
