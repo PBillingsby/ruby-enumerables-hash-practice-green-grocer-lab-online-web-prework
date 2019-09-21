@@ -15,8 +15,6 @@ def apply_coupons(cart, coupons)
   coupon = coupons.find { |coupon| coupon[:item]
   cart.each |n| { n.include?(coupon) }
   
-  
-  
 end
 
 def apply_clearance(cart)
