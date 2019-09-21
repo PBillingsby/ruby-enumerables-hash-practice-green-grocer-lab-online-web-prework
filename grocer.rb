@@ -16,6 +16,7 @@ def apply_coupons(cart, coupons)
   cart.each |n| 
     if n.include?(coupon)
       puts "#{n} W/COUPON"
+    end
   
 end
 
